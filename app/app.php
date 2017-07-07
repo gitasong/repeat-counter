@@ -15,7 +15,7 @@
         $word = $_POST['word'];
         $sentence = $_POST['sentence'];
         $new_repeat_counter = new RepeatCounter($word, $sentence);
-        $count = $new_repeat_counter->wordCount($word, $sentence);
+        $count = $new_repeat_counter->countRepeats($word, $sentence);
 
         return $app['twig']->render('results.html.twig', array('display_word' => $word, 'display_sentence' => $sentence, 'display_count' => $count));
     });

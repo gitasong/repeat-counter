@@ -11,7 +11,7 @@
             $sentence_input = "a";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -25,7 +25,7 @@
             $sentence_input = "the";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -39,7 +39,7 @@
             $sentence_input = "polly want a cracker";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -53,7 +53,7 @@
             $sentence_input = "I want what I want";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);
@@ -67,7 +67,7 @@
             $sentence_input = "the crow flies at dawn";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -81,7 +81,7 @@
             $sentence_input = "she sells sea shells by the sea shore";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);
@@ -95,7 +95,7 @@
             $sentence_input = "the con consistently conned his marks, but he couldn't con himself";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);

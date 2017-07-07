@@ -2,7 +2,7 @@
 
     class RepeatCounter
     {
-        function wordCount($word_input, $sentence_input)
+        function countRepeats($word_input, $sentence_input)
         {
             $count = 0;
             $sentence_arr = explode(" ", $sentence_input);
