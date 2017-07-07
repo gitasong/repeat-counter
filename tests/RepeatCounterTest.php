@@ -72,5 +72,19 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function testRepeatCounterMultiLetterVsMultiWordMultiOccurrences()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "sea";
+            $string = "she sells sea shells by the sea shore";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
