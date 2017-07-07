@@ -3,25 +3,25 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="/css/styles.css" type="text/css">
-        <title>Repeat Counter</title>
+        <title>Rrrrepeat Counter</title>
     </head>
     <body>
         <div class="container-fluid">
             <div class="jumbotron">
-                <h1>Repeat Counter</h1>
+                <h1>Rrrrepeat Counter</h1>
                 <h2>A simple app that counts the number of occurrences of a word in a sentence.</h2>
             </div>
             <div class="container main">
                 <div class="row">
                     <div class="col-md-12">
-                        <form name="input-form" action="/display-count" method="post">
+                        <form name="input-form" id="input-form" action="/display-count" method="post">
                             <div class="form-group">
                                 <label for="word">Enter a word: </label>
-                                <input type="text" name="word" placeholder="ex: sea" required></input>
+                                <input type="text" name="word" id="word" placeholder="ex: sea" required></input>
                             </div>
                             <div class="form-group">
                                 <label for="sentence">Enter a sentence that contains that word (or not) (case-sensitive): </label>
-                                <input type="text" name="sentence" placeholder="ex: she sell sea shells by the sea shore" required></input>
+                                <input type="text" name="sentence" id="sentence" placeholder="ex: she sell sea shells by the sea shore" required></input>
                             </div>
                             <button type="submit" name="submit-button" class="btn btn-primary">Show count!</button>
                         </form>
