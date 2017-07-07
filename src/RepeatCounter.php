@@ -4,7 +4,14 @@
     {
         function wordCount($word, $string)
         {
-            return substr_count($string, $word);
+            $count = 0;
+            $string_arr = explode(" ", $string);
+            foreach ($string_arr as $item) {
+                if ($word == $item) {
+                    $count++;
+                }
+            }
+            return $count;
         }
     }
 ?>
