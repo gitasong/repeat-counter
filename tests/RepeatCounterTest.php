@@ -86,5 +86,19 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function testRepeatCounterMultiLetterVsMultiWordWFakeout()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "con";
+            $string = "the con consistently conned his marks, but he couldn't con himself";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
