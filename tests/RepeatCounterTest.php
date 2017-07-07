@@ -30,5 +30,19 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function testRepeatCounterSingleLetterVsMultiWord()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "a";
+            $string = "polly want a cracker";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
