@@ -44,5 +44,19 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function testRepeatCounterSingleLetterVsMultiWordMultOccurrences()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "I";
+            $string = "I want what I want";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(2, $result);
+        }
     }
 ?>
