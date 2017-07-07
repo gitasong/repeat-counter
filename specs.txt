@@ -1,0 +1,35 @@
+Repeat Counter Project Specs
+
+The program correctly returns how frequently a single-letter word appears in a single-letter string.
+Input: Word: "a", String: "a"
+Output: 1
+Reasoning: "a" is one of only two (or three, if you count the archaic "O") single-letter words in the English language.
+
+The program correctly returns how frequently a multi-letter word appears in a multi-letter/single-word string.
+Input: Word: "the", String: "the"
+Output: 1
+Reasoning: Since "the" is one of the most common words in English, might as well use it. :)
+
+The program correctly returns how frequently a single-letter word appears in a multi-word string containing a single occurrence of that single-letter word.
+Input: Word: "a", String: "polly want a cracker"
+Output: 1
+Reasoning: See the first spec, above.
+
+The program correctly returns how frequently a single-letter word appears in a multi-word string containing multiple occurrences of that single-letter word.
+Input: Word: "I", String: "I want what I want"
+Output: 2
+Reasoning: I wanted to use a single-letter word other than "a" for some of the test cases. Using "I" also allows the program to either match or ignore case, as I choose (the projects specs are case-agnostic).
+
+The program correctly returns how frequently a multi-letter word appears in a multi-word string containing a single occurrence of that multi-letter word.
+Input: Word: "crow", String: "the crow flies at dawn"
+Output: 1
+Reasoning: A fun sentence I stole from a LaunchCode project. It contains the unambiguous word "crow".
+
+The program correctly returns how frequently a multi-letter word appears in a multi-word string containing multiple occurrences of that multi-letter word.
+Input: Word: "sea", String: "she sells sea shells by the sea shore"
+Output: 2
+Reasoning: Another fun sentence that contains multiple occurrences of a word (and is a tongue-twister, to boot :) .
+
+The program correctly returns how frequently a multi-letter word appears in a multi-word string containing one or more occurrences of that word, plus one or more occurrences of that word embedded in another word (these should not be counted).
+Input: Word: "con", String: "the con consistently conned his marks, but he couldn't con himself"
+Output: 2
