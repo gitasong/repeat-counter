@@ -1,5 +1,6 @@
 body {
     background-color: #337ab7;
+    font-family: 'Zilla Slab', serif;
 }
 
 .jumbotron {
@@ -22,6 +23,7 @@ body {
   position: relative;
   z-index: 2;
   color: rgba(51, 51, 51, 1);
+  font-size: 72px;
 }
 
 .jumbotron h2 {
@@ -29,10 +31,23 @@ body {
   position: relative;
   z-index: 2;
   color: rgba(102, 102, 102, 1);
+  font-size: 36px;
 }
 
 label {
     color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+input {
+    margin-left: 10px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: #aaa;
     font-size: 16px;
 }
 
@@ -41,8 +56,10 @@ input#sentence {
 }
 
 .btn-primary {
+    margin-top: 20px;
     background-color: #fff;
     color: #337ab7;
+    font-size: 16px;
     font-weight: 700;
 }
 
