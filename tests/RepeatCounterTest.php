@@ -7,11 +7,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "a";
-            $string = "a";
+            $word_input = "a";
+            $sentence_input = "a";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -21,11 +21,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "the";
-            $string = "the";
+            $word_input = "the";
+            $sentence_input = "the";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -35,11 +35,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "a";
-            $string = "polly want a cracker";
+            $word_input = "a";
+            $sentence_input = "polly want a cracker";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -49,11 +49,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "I";
-            $string = "I want what I want";
+            $word_input = "I";
+            $sentence_input = "I want what I want";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);
@@ -63,11 +63,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "crow";
-            $string = "the crow flies at dawn";
+            $word_input = "crow";
+            $sentence_input = "the crow flies at dawn";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(1, $result);
@@ -77,11 +77,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "sea";
-            $string = "she sells sea shells by the sea shore";
+            $word_input = "sea";
+            $sentence_input = "she sells sea shells by the sea shore";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);
@@ -91,11 +91,11 @@
         {
             // Arrange
             $test_repeatCounter = new RepeatCounter;
-            $word = "con";
-            $string = "the con consistently conned his marks, but he couldn't con himself";
+            $word_input = "con";
+            $sentence_input = "the con consistently conned his marks, but he couldn't con himself";
 
             // Act
-            $result = $test_repeatCounter->wordCount($word, $string);
+            $result = $test_repeatCounter->wordCount($word_input, $sentence_input);
 
             // Assert
             $this->assertEquals(2, $result);

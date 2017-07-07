@@ -2,12 +2,12 @@
 
     class RepeatCounter
     {
-        function wordCount($word, $string)
+        function wordCount($word_input, $sentence_input)
         {
             $count = 0;
-            $string_arr = explode(" ", $string);
-            foreach ($string_arr as $item) {
-                if ($word == $item) {
+            $sentence_arr = explode(" ", $sentence_input);
+            foreach ($sentence_arr as $item) {
+                if ($word_input == $item) {
                     $count++;
                 }
             }
