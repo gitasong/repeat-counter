@@ -13,7 +13,7 @@ Simple app allowing one to enter a word and a sentence containing that word (or 
 * You'll need to have PHP installed on your computer. For install instructions, see https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-php.
 * Clone the project directory from Terminal using <git clone https://github.com/gitasong/address-book-twig.git>.
 * Install Composer on your computer following the install instructions at https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-composer-and-configuration-for-mac for Mac and https://www.learnhowtoprogram.com/php/getting-started-with-php/installing-composer-and-configuration-for-windows for Windows.
-* In Terminal, navigate to the main project directory and install the necessary dependencies (Silex and Twig) using <composer install>.
+* In Terminal, navigate to the main project directory and install the necessary dependencies (Silex and Twig) using <composer install> .
 * In Terminal, navigate to the web folder inside the main project directory and start your PHP server using <php -S localhost:8000>.
 * Type localhost:8000 in your browser URL window to start the app.
 
