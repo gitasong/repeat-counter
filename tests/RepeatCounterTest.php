@@ -58,5 +58,19 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function testRepeatCounterMultiLetterVsMultiWord()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "crow";
+            $string = "the crow flies at dawn";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
