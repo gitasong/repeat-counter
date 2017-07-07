@@ -16,5 +16,19 @@
             // Assert
             $this->assertEquals(1, $result);
         }
+
+        function testRepeatCounterMultiLetterVsMultiLetter()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word = "the";
+            $string = "the";
+
+            // Act
+            $result = $test_repeatCounter->wordCount($word, $string);
+
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
