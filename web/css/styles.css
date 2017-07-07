@@ -1,3 +1,7 @@
+body {
+    background-color: #337ab7;
+}
+
 .jumbotron {
     position: relative;
     overflow: hidden;
@@ -27,6 +31,23 @@
   color: rgba(102, 102, 102, 1);
 }
 
+label {
+    color: #fff;
+    font-size: 16px;
+}
+
 input#sentence {
     width: 600px;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #337ab7;
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #dedede;
+    color: #337ab7;
+    font-weight: 700;
 }
