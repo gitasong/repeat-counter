@@ -51,3 +51,7 @@ input#sentence {
     color: #337ab7;
     font-weight: 700;
 }
+
+h3.results {
+    color: #fff;
+}
