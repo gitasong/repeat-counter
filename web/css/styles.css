@@ -34,21 +34,26 @@ body {
   font-size: 36px;
 }
 
+form {
+    margin-top: 60px;
+}
+
 label {
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
 }
+
 input {
     margin-left: 10px;
     height: 30px;
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 10px;
 }
 
 input::placeholder {
     color: #aaa;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 input#sentence {
@@ -59,7 +64,7 @@ input#sentence {
     margin-top: 20px;
     background-color: #fff;
     color: #337ab7;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
 }
 
