@@ -54,6 +54,11 @@ Simple app allowing one to enter a word and a sentence containing that word (or 
     - Output: 2
     - Reasoning: Ensures that the program returns whole words only, not partial words or words within other words.
 
+* The program correctly returns how frequently a multi-letter word appears in a multi-word string containing one or more non-alpha/non-space characters adjacent to that word.
+    - Input: Word: "Nevermore", String: "'Quoth the raven, 'Nevermore!"
+    - Output: 1
+    - Reasoning: I realized from doing some additional manual testing that words with adjacent non-alpha characters won't be counted, since the existing code looks for exact matches, so I'll need to strip non-alpha/non-space characters.
+
 ## Known Bugs
 
 Forms are not currently validated. Other than that, there are no known bugs.
