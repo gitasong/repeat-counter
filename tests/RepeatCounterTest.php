@@ -100,5 +100,19 @@
             // Assert
             $this->assertEquals(2, $result);
         }
+
+        function testRepeatCounterStripNonAlpha()
+        {
+            // Arrange
+            $test_repeatCounter = new RepeatCounter;
+            $word_input = "Nevermore";
+            $sentence_input = "Quoth the raven, 'Nevermore!'";
+
+            // Act
+            $result = $test_repeatCounter->countRepeats($word_input, $sentence_input);
+
+            // Assert
+            $this->assertEquals(1, $result);
+        }
     }
 ?>
